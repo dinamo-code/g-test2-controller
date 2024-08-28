@@ -15,8 +15,16 @@ include "top_menu.php";
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 <style>
-    .langfield {
-        
+ .controllerheaderlinks {
+    position: absolute;
+    left: 35%;
+    top: 24px;
+ }
+ .controllerheaderlinks a{
+    border-radius :0;
+    background-color: transparent;
+    color : #566dc5;
+    font-size: 20px;
     }
 </style>
 </head>
@@ -37,9 +45,11 @@ include "top_menu.php";
             <div class="signcontainer">
             <!-- <div class="signinheader"><a href="login.php" class="Signinlink">Sign In</a></div>
             <div class="signupheader"><a href="register.php" class="signuplink">Sign Up</a></div> -->
+            <div class="controllerheaderlinks">
             <div><a href="orders.php">Orders</a></div>
             <div><a href="products.php">Products</a></div>
             <div><a href="store.php">Store</a></div>
+            </div>
         </div>
             </div>
         </header>
