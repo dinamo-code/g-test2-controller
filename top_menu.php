@@ -35,8 +35,8 @@ session_start()
             <div class="menubar">
 
                 <?php
-                if (isset($_SESSION['name'])){
-                    $str=$_SESSION['name'];
+                if (isset($_SESSION['Aname'])){
+                    $str=$_SESSION['Aname'];
                     
 
                 ?>

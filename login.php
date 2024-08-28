@@ -49,7 +49,7 @@ if (isset($_POST['submit'])){
                         setcookie("remember_email", $email, time() - 365*24*3600);
                         setcookie("remember", $remember, time() - 365*24*3600);
                     }
-                    $_SESSION['name'] = $row['name'];
+                    $_SESSION['Aname'] = $row['Aname'];
                     header("location:controller.php");
                 }
                 else{

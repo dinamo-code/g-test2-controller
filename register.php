@@ -1,19 +1,19 @@
 <?php
   include "cfg/dbconnect.php";
-  $name = $email = $pwd = $conf_pwd = "";
-  $name_err = $email_err = $pwd_err = $conf_pwd_err = "";
+  $Aname = $email = $pwd = $conf_pwd = "";
+  $Aname_err = $email_err = $pwd_err = $conf_pwd_err = "";
   $error = false; 
   $err_msg = "";
   
   if (isset($_POST['submit'])){
   
-      $name = trim($_POST['name']);
+      $Aname = trim($_POST['Aname']);
       $email = trim($_POST['email']);
       $pwd = trim($_POST['pwd']);
       $conf_pwd = trim($_POST['conf_pwd']);
       // validate fields
-      if ($name == ""){
-          $name_err = "Name is mandatory";
+      if ($Aname == ""){
+          $Aname_err = "name is mandatory";
           $error = true;
       }
   
@@ -62,18 +62,18 @@
         if (!$error){
           $pwd = password_hash($pwd, PASSWORD_DEFAULT);
   
-          $sql = "insert into admins (name, email, password) value(?, ?, ?)";
+          $sql = "insert into admins (Aname, email, password) value(?, ?, ?)";
           try{
               $stmt = $conn->prepare($sql);
-              $stmt->bind_param("sss", $name, $email, $pwd);
+              $stmt->bind_param("sss", $Aname, $email, $pwd);
               $stmt->execute();
-              $succ_msg = "Registration successful. Please <a href='adminlogin.php'>login</a>";
-              $name = $email ="";
+              $succ_msg = "Registration successful. Please <a href='login.php'>login</a>";
+              $Aname = $email ="";
           }
           catch(Exception $e){
               $error_msg = $e->getMessage();
           }
-          $_SESSION['name'] = $row['name'];
+          $_SESSION['Aname'] = $row['Aname'];
           header("location:login.php");
       }
   }
@@ -115,12 +115,12 @@
               <input
                   type="text"
                   class="namefield"
-                  name="name"
-                  id="name"
-                  placeholder="Enter Name"
-                  value="<?=$name?>"
+                  name="Aname"
+                  id="Aname"
+                  placeholder="Enter name"
+                  value="<?=$Aname?>"
               />
-              <div class="input-err text-danger"><?= $name_err?></div>
+              <div class="input-err text-danger"><?= $Aname_err?></div>
               
           </div>
   
@@ -185,7 +185,7 @@
                   Register
               </button>
           </div>
-          <p>Already Registered? Login <a href="adminlogin.php">here</a></p>
+          <p>Already Registered? Login <a href="login.php">here</a></p>
       </form>
       </div>
   </div>
