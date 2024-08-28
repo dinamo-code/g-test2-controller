@@ -74,7 +74,7 @@
               $error_msg = $e->getMessage();
           }
           $_SESSION['name'] = $row['name'];
-          header("location:adminlogin.php");
+          header("location:login.php");
       }
   }
   include "top_menu2.php";
