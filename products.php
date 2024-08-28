@@ -23,7 +23,7 @@
             <h1> Products List </h1><!--products list-->
             <div>
                 <a href="create.php" >Create</a>
-
+ 
             </div>
         </header>
 
@@ -86,7 +86,7 @@
              <tr>
 
                 <td><?php echo $data ['id'];?></td>
-                <td><?php echo $data ['Image'];?></td><!--image-->
+                <td><img src="<?php echo $data ['Image'];?>"></td><!--image-->
                 <td><?php echo $data ['Name'];?></td><!--name-->
                 <td><?php echo $data ['Price'];?></td><!--price-->
                 <td>
