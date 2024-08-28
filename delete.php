@@ -6,7 +6,7 @@ $sql = "DELETE FROM products WHERE id='$id'";// recorret the table
 if(mysqli_query($conn,$sql)){
     session_start();
     $_SESSION["delete"] = "Product Deleted Successfully!";// product
-    header("Location:index.php");
+    header("Location:products.php");
 }else{
     die("Something went wrong");
 }

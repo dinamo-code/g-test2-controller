@@ -100,7 +100,7 @@
                 <td><?php echo $data ['Name'];?></td><!--name-->
                 <td><?php echo $data ['Price'];?></td><!--price-->
                 <td>
-                    <a href="view.php?id=<?php echo $data['id']; ?>" >Read More</a>
+                    <a href="view.php?id=<?php echo $data['id']; ?>" > More</a>
                     <a href="delete.php?id=<?php echo $data['id']; ?>" >Delete</a>
 
                 </td>
