@@ -9,8 +9,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Orders</title>
+    <style>
+        .headerlogo {
+        font-size: 30px;
+        position: absolute;
+        font-weight: 800;
+        top: 15px;
+        left : 5%;
+    }
+    .headerlogo a {
+            color: #566dc5;
+    }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div class="headerlogo">
+            <a href="controller.php">G</a>
+        </div>
+    </header>
 </body>
 </html>
