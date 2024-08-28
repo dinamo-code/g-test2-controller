@@ -69,7 +69,7 @@ if (isset($_POST['submit'])){
 
     }
 }
-include "top_menu2.php";
+include "top_menu.php";
 ?>
 
 

@@ -67,8 +67,8 @@ include "top_menu.php";
                 <p><span>"</span> please sign and go to admin panel <span>"</span></p>
             </div>
             <div class="signcontainer">
-            <div class="signinheader"><a href="adminlogin.php" class="Signinlink">Sign In</a></div>
-            <div class="signupheader"><a href="adminregister.php" class="signuplink">Sign Up</a></div>
+            <div class="signinheader"><a href="login.php" class="Signinlink">Sign In</a></div>
+            <div class="signupheader"><a href="register.php" class="signuplink">Sign Up</a></div>
             </div>
             </div>
         </header>

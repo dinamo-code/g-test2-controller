@@ -77,7 +77,7 @@
           header("location:login.php");
       }
   }
-  include "top_menu2.php";
+  include "top_menu.php";
   ?>
   <link rel="stylesheet" href="CSS/signup.css">
   
