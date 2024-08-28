@@ -30,10 +30,8 @@
     <div >
 
         <header >
-            <h1> Products List </h1><!--products list-->
             <div>
                 <a href="create.php" >Create</a>
-
             </div>
         </header>
 
@@ -74,9 +72,9 @@
             <tr>
 
                 <th>id</th>
-                <th>Image</th><!--image-->
-                <th>Name</th><!--name-->
-                <th>Price</th><!--price-->
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
                 <th>Action</th>
 
             </tr>
