@@ -37,7 +37,10 @@ include "top_menu.php";
             <div class="signcontainer">
             <!-- <div class="signinheader"><a href="login.php" class="Signinlink">Sign In</a></div>
             <div class="signupheader"><a href="register.php" class="signuplink">Sign Up</a></div> -->
-            </div>
+            <div><a href="orders.php">Orders</a></div>
+            <div><a href="products.php">Products</a></div>
+            <div><a href="store.php">Store</a></div>
+        </div>
             </div>
         </header>
     </div>
