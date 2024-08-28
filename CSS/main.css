@@ -1,0 +1,43 @@
+body {
+    font-family: "Inter", sans-serif;    margin: 0;
+    padding: 0;
+  
+
+}
+.maincontainer {
+
+}
+header {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+}
+.logo {
+    font-size: 30px;
+    position: absolute;
+    font-weight: 800;
+    top: -15px;
+    left : 5%;
+    color: #566dc5;
+}
+.headerlinks {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 22px;
+    margin-right: calc(5% - 8px);
+}
+.headerlinks div {
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.signcontainer a {
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #566dc5;
+    color: white;
+}
+

@@ -1,0 +1,53 @@
+body {
+    font-family: "Inter", sans-serif;    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.signupcontainer {
+    position: relative;
+    top: 150px;
+}
+form input {
+    width: 250px;
+    height: 25px;
+    margin-top: 8px;
+    padding: 5px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border-width: 0.2px;
+    border-color: transparent;
+}
+form {
+    position: relative;
+    bottom: 22px;
+}
+input:focus {
+    border-width: 1.5px;
+    border-color:#566dc5 ;
+}
+.submitsignup {
+    width: 100px;
+    height: 40px;
+    background-color: #566dc5;
+    color: white;
+    border-radius: 25px;
+    border-width: 0px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.signuptitle {
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    bottom: 50px;
+    color: #566dc5;
+}
+a {
+    /* text-decoration: none; */
+    color: #566dc5;
+    font-weight:500;
+}

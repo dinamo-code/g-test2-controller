@@ -1,0 +1,15 @@
+#lang {
+    width: 125%;
+    height: 125%;
+    font-size: 18px;
+    padding-right: 2px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+}
+.langfield {
+    position: absolute;
+    top: 16px;
+    right: 12%;
+    
+}
