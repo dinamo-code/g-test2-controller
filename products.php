@@ -7,16 +7,26 @@
     <link rel="stylesheet" href="CSS/global.css">
     <title>Products List</title><!--products list-->
 
-    <!-- <style>
-        table  td, table th{
-        vertical-align:middle;
-        text-align:right;
-        padding:20px!important;
-        }
-    </style> -->
+    <style>
+                .headerlogo {
+        font-size: 30px;
+        position: absolute;
+        font-weight: 800;
+        top: 15px;
+        left : 5%;
+    }
+    .headerlogo a {
+            color: #566dc5;
+    }
+    </style>
+
 </head>
 <body>
-
+<header>
+        <div class="headerlogo">
+            <a href="controller.php">G</a>
+        </div>
+    </header>
     <div >
 
         <header >
