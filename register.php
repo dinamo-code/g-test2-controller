@@ -80,7 +80,8 @@
   include "top_menu.php";
   ?>
   <link rel="stylesheet" href="CSS/signup.css">
-  
+  <link rel="stylesheet" href="CSS/acountdisplay.css">
+
   <style>
     .showpasslabel {
         position: relative;
