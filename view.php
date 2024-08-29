@@ -4,26 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/viewmore.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Product Details</title><!--product details--> 
     <style>
-        /* .User-Details{
-            background-color:#f5f5f5;
-
-        } */
     </style>
 </head>
 <body>
-    <div >
-        <header >
-            <h1>Product Details</h1><!-- product details--> 
-            <div>
-                <a href="products.php" >Back</a>
-            </div>
-        </header>
-
-    </div>
-
-    <div>
+<header>
+        <div class="headerlogo">
+            <a href="products.php">G</a>
+        </div>
+    </header>
+    <div class="viewmaincontainer">
         <?php 
             include("cfg/dbconnect.php");//cfg/dbconnect.php
             $id=$_GET['id'];
@@ -33,15 +29,22 @@
                 while($row=mysqli_fetch_array($result)){
         ?>
 
-                <h3>Image:</h3><!--image-->
-                 <p><?php echo $row["Image"]; ?></p><!--image-->
+                <!-- <h3>Image:</h3> -->
+                 <div class="viewimgcontainer"><img src="<?php echo $row["Image"]; ?>" ></div><!--image-->
+                 <div class="viewinfcontainer">
+                 <div class="namemaincontainer">
                  <h3>Name:</h3><!--name-->
-                 <p><?php echo $row["Name"]; ?></p><!--name-->
+                 </div>
+                 <div class="pricemaincontainer">
+                 <div class="viewnameconainer"><?php echo $row["Name"]; ?></div><!--name-->
                  <h3>Price:</h3><!--price-->
-                 <p><?php echo $row["Price"]; ?></p><!--price-->
+                 <div class="viewpriceconainer"><?php echo $row["Price"]; ?> <span> $</span></div><!--price-->
+                 </div>
+                 <div class="desmaincontainer">
                  <h3>Description :</h3><!--description-->
-                 <p><?php echo $row["Description"]; ?></p><!--description-->
-
+                 <div class="viewdesconainer"><?php echo $row["Description"]; ?><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus nulla quam vero, porro necessitatibus quisquam saepe assumenda, pariatur aliquam ea reprehenderit eos ducimus ut? Eligendi tempora delectus sint neque fugiat.</p></div><!--description-->
+                 </div>
+                 </div>
 
         <?php
                 }

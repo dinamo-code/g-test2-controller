@@ -1,0 +1,37 @@
+.headerlogo {
+    font-size: 30px;
+    position: absolute;
+    font-weight: 800;
+    top: 15px;
+    left : 5%;
+}
+.headerlogo a {
+        color: #566dc5;
+}
+.viewmaincontainer {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+
+.viewimgcontainer {
+    margin-top: 100px;
+    margin-right: 60px;
+}
+.viewinfcontainer {
+    margin-top: 130px;
+}
+.viewimgcontainer img{
+    width: 240px;
+    height: 400px;
+}
+h3 {
+    color: #566dc5;
+    font-weight: 400;
+}
+span {
+    color: #566dc5;
+}
+.viewmaincontainer div{
+    font-weight: 600;
+}
