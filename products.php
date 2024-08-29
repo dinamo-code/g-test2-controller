@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/productscontrol.css">
     <title>Products List</title><!--products list-->
 
     <style>
-                .headerlogo {
+        .headerlogo {
         font-size: 30px;
         position: absolute;
         font-weight: 800;
@@ -30,8 +31,9 @@
     <div >
 
         <header >
-            <div>
-                <a href="create.php" >Create</a>
+            <div class="createlinkdiv">
+                <a href="create.php" class="createlink">Create</a>
+
             </div>
         </header>
 
@@ -65,9 +67,9 @@
 
     </div>  
 
-    <table >
+    <table class="productsmaintable">
 
-        <thead>
+        <!-- <thead>
 
             <tr>
 
@@ -79,9 +81,9 @@
 
             </tr>
 
-        </thead>
+        </thead> -->
 
-        <tbody>
+        <tbody class="productsmaincontainer">
 
             <?php
             include('cfg/dbconnect.php');// cfg/dbconnect.php
@@ -91,30 +93,29 @@
             while($data = mysqli_fetch_array($result)){
              ?>
 
-             <tr>
-
-                <td><?php echo $data ['id'];?></td>
-                <td><?php echo $data ['Image'];?></td><!--image-->
-                <td><?php echo $data ['Name'];?></td><!--name-->
-                <td><?php echo $data ['Price'];?></td><!--price-->
-                <td>
-                    <a href="view.php?id=<?php echo $data['id']; ?>" >Read More</a>
-                    <a href="delete.php?id=<?php echo $data['id']; ?>" >Delete</a>
-
+             <tr class="productcontainer">
+                 <td class="productcontainerimg"><img src="<?php echo $data ['Image'];?>"></td><!--image-->
+                 <td class="productcontainerid"><span>Id : </span><?php echo $data ['id'];?></td>
+                <td class="productcontainername"><span>Name : </span><?php echo $data ['Name'];?></td><!--name-->
+                <td class="productcontainerprice"><span>Price : </span><?php echo $data ['Price'];?><span>$</span></td><!--price-->
+                <td class="productcontainerviewanddelete">
+                    <a href="view.php?id=<?php echo $data['id']; ?>" class="productcontainerviewmore">Read More</a>
+                    <a href="delete.php?id=<?php echo $data['id']; ?>" class="productcontainerdelete">Delete</a>
                 </td>
-
              </tr>
 
             <?php
         }?>        
-
-
         </tbody>
 
 
     </table>
 
-
+        <footer>
+            <div class="footercontainer">
+                <p>All copy rights recived </p>
+            </div>
+        </footer>
 
 </body>
 </html>

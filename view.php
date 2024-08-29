@@ -16,7 +16,7 @@
         <header >
             <h1>Product Details</h1><!-- product details--> 
             <div>
-                <a href="index.php" >Back</a>
+                <a href="products.php" >Back</a>
             </div>
         </header>
 

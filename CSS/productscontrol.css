@@ -1,0 +1,56 @@
+body {
+
+}
+.createlinkdiv {
+    position: absolute;
+    right: 12%;
+    top: 4%;
+}
+.createlink{
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #566dc5;
+    color: white;
+    font-weight: 700;
+}
+table {
+    margin-left: 5%;
+    margin-right: 5%;
+    position: absolute;
+    top: 26%;
+    left: 6.2%;
+    /*width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  */
+}
+tbody {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 25px;
+    
+}
+tbody tr{
+    width: 240px;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2.5px 2.5px 32px  rgba(82, 78, 78, 0.278);
+}
+tr td{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+    margin-top: 8px;
+}
+tr td a {
+    display: block;
+    /* text-align: center; */
+}
+footer {
+    position: absolute;
+    bottom: 0;
+}
