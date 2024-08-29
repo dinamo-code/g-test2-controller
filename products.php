@@ -31,16 +31,8 @@
     <div >
 
         <header >
-<<<<<<< HEAD
-
             <div class="createlinkdiv">
-                <a href="create.php" class="createlink">Create</a>
-=======
-            <h1> Products List </h1><!--products list-->
-            <div>
-                <a href="create.php" >Create</a>
- 
->>>>>>> 08e60510166cd459ea0760a2c4d52a38dd976477
+            <a href="create.php" class="createlink">Create</a>
             </div>
         </header>
 
@@ -99,9 +91,6 @@
 
             while($data = mysqli_fetch_array($result))
              ?>
-
-
-<<<<<<< HEAD
              <tr class="productcontainer">
                  <td class="productcontainerimg"><img src="<?php echo $data ['Image'];?>"></td><!--image-->
                  <td class="productcontainerid"><span>Id : </span><?php echo $data ['id'];?></td>
@@ -110,16 +99,6 @@
                 <td class="productcontainerviewanddelete">
                     <a href="view.php?id=<?php echo $data['id']; ?>" class="productcontainerviewmore">Read More</a>
                     <a href="delete.php?id=<?php echo $data['id']; ?>" class="productcontainerdelete">Delete</a>
-=======
-                <td><?php echo $data ['id'];?></td>
-                <td><img src="<?php echo $data ['Image'];?>"></td><!--image-->
-                <td><?php echo $data ['Name'];?></td><!--name-->
-                <td><?php echo $data ['Price'];?></td><!--price-->
-                <td>
-                    <a href="view.php?id=<?php echo $data['id']; ?>" > More</a>
-                    <a href="delete.php?id=<?php echo $data['id']; ?>" >Delete</a>
->>>>>>> 08e60510166cd459ea0760a2c4d52a38dd976477
-
                 </td>
              </tr>
 
