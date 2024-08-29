@@ -40,17 +40,51 @@ tbody tr{
     border-radius: 15px;
     box-shadow: 2.5px 2.5px 32px  rgba(82, 78, 78, 0.278);
 }
+
 tr td{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     display: block;
-    margin-top: 8px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+tr td span {
+    color: #566dc5;
+    font-weight: 700;
 }
 tr td a {
     display: block;
-    /* text-align: center; */
 }
-footer {
-    position: absolute;
-    bottom: 0;
+.cardlinks a{
+    padding: 8px;
+    border-radius: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #566dc5;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    width: 80%;
+    margin-top: 8px;
+}
+.cardlinks {
+    margin-top: 45px;
+    margin-left: 45px;
+}
+.cardimg {
+    padding-top: 30px;
+    height: 110px;
+    width: 80;
+    justify-content: center;
+}
+.cardimg img {
+    width: 120px;
+    height: 120px;
+}
+tbody {
+    margin-bottom: 100px;
+}
+.cardimg {
+    display: flex;
+    align-items: center;
 }

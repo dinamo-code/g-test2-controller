@@ -15,6 +15,7 @@ session_start()
             position: relative;
             top :25px;
             left: 91.5%;
+            z-index: 1000;
         }
         .huseracount {
             text-decoration :none;
