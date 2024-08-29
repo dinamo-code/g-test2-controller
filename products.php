@@ -31,9 +31,9 @@
     <div >
 
         <header >
+
             <div class="createlinkdiv">
                 <a href="create.php" class="createlink">Create</a>
-
             </div>
         </header>
 
@@ -90,8 +90,9 @@
             $sql = "SELECT * FROM  products";//recorrect table name
             $result = mysqli_query($conn,$sql);
 
-            while($data = mysqli_fetch_array($result)){
+            while($data = mysqli_fetch_array($result))
              ?>
+
 
              <tr class="productcontainer">
                  <td class="productcontainerimg"><img src="<?php echo $data ['Image'];?>"></td><!--image-->
@@ -101,11 +102,12 @@
                 <td class="productcontainerviewanddelete">
                     <a href="view.php?id=<?php echo $data['id']; ?>" class="productcontainerviewmore">Read More</a>
                     <a href="delete.php?id=<?php echo $data['id']; ?>" class="productcontainerdelete">Delete</a>
+
                 </td>
              </tr>
 
             <?php
-        }?>        
+        ?>        
         </tbody>
 
 
