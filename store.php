@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/storepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -27,7 +28,28 @@
         <div class="headerlogo">
             <a href="controller.php">G</a>
         </div>
+        <h3>
+            Store Management & Analytics
+        </h3>
     </header>
-    
+    <section class="Analytics">
+        <div class="totalsales card">
+            <h4>Total Sales <span>0</span> <span style="color :#566dc5;">$</span></h4>
+            <div class="salesgragh"></div>
+        </div>
+        <div class="orders card">
+            <h4>Orders <span>0</span></h4>
+            <div class="ordersgragh"></div>
+        </div>
+        <div class="users card">
+            <h4>Users <span>0</span></h4>
+            <div class="usersgragh"></div>
+        </div>
+    </section>
+    <section class="pagesmanage">
+        <div class="conpages card">
+            <a href=""></a>
+        </div>
+    </section>
 </body>
 </html>
