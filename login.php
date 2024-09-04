@@ -150,7 +150,7 @@ include "top_menu.php";
                 Login
             </button>
         </div>
-        <p>Not Registered? Click <a href="adminregister.php">here</a> to register</p>
+        <p>Not Registered? Click <a href="register.php">here</a> to register</p>
     </form>
     </div>
 </div>
