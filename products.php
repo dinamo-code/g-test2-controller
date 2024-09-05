@@ -66,21 +66,6 @@
     </div>  
 
     <table >
-
-        <!-- <thead>
-
-            <tr>
-
-                <th>id</th>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Action</th>
-
-            </tr>
-
-        </thead> -->
-
         <tbody class="maincardcontainer">
 
             <?php
@@ -92,7 +77,7 @@
              ?>
 
              <tr class="cardcontainer">
-                <td class="cardimg"><img src=" <?php echo $data ['Image'];?> "></td>
+                <td class="cardimg"><img src="<?php echo $data ['Image'];?>" alt=""></td>
                 <td class="cardid"><span>Id : </span><?php echo $data ['id'];?></td>
                 <td class="cardname"><span>Name : </span><?php echo $data ['Name'];?></td><!--name-->
                 <td class="cardprice"><span>Price : </span><?php echo $data ['Price'];?><span class="dolarsign"> $</span></td><!--price-->
