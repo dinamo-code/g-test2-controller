@@ -99,8 +99,23 @@
                  <td class="cardname"><span>Useremail : </span><div id="Useremail"><?php echo $data ['Useremail'];?></div></td><!--name-->
                  <td class="cardname"><span>Userlocation : </span><div id="Userlocation"><?php echo $data ['Userlocation'];?></div></td><!--name-->
                  <td class="cardname"><span>Paymethod : </span><div id="Paymethod"><?php echo $data ['Paymethod'];?></div></td><!--name-->
-                 <td class="cardimg"><img src="<?php echo $data ['Product_image'];?>" id="Product_image"></td><!--image-->
                  <td class="cardname"><span>Product_name : </span><div id="Product_name"><?php echo $data ['Product_name'];?></div></td><!--name-->
+                 <td>
+                <?php 
+                $sql = "SELECT * FROM images  ";//
+                $res = mysqli_query($conn,  $sql);//
+
+                if (mysqli_num_rows($res) > 0) {
+                    while ($images = mysqli_fetch_assoc($res)) {  ?>
+             
+             	        <?php if( $images ['id'] === $data ['id']){ $test= $images ['image_url']; } ?>
+                            <!-- <img src="uploads/<?php //echo $images ['image_url']; ?>" alt="">  -->
+                       
+			  <?php } }?> 
+
+		
+                </td>
+                <td><span>Product_image : </span><img src="uploads/<?php  echo $test ;?>" alt="" style="width:100px ; height:100px"></td>
                  <td class="cardprice"><span>Product_price : </span><div id="Product_pricer"><?php echo $data ['Product_price'];?><span class="dolarsign"> $</span></div></td><!--price-->
                 <td class="cardname"><span>Product_count : </span><div id="Product_count"><?php echo $data ['Product_count'];?></div></td><!--name-->
                 

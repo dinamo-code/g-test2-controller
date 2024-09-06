@@ -30,11 +30,11 @@ include('top_menu.php');
         <div class="creatpagetitle">
             <h3>Create New Product</h3>
         </div>
-        <form action="process.php" method="post"><!-- just image , name , description , price-->
-            <div >
-                <label for="Image">Image:</label><!--make it image-->
+        <form action="process.php" method="post" enctype="multipart/form-data"><!-- just image , name , description , price-->
+            <!-- <div >
+                <label for="Image">Image:</label>
                 <input type="file" id="Image" name="Image" required placeholder=" Put an image" >
-            </div>
+            </div> -->
 
 
             <div >

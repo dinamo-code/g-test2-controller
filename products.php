@@ -66,21 +66,6 @@
     </div>  
 
     <table >
-
-        <!-- <thead>
-
-            <tr>
-
-                <th>id</th>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Action</th>
-
-            </tr>
-
-        </thead> -->
-
         <tbody class="maincardcontainer">
 
             <?php
@@ -92,7 +77,23 @@
              ?>
 
              <tr class="cardcontainer">
-                <td class="cardimg"><img src=" <?php echo $data ['Image'];?> "></td>
+                <td>
+                <?php 
+                $sql = "SELECT * FROM images  ";//
+                $res = mysqli_query($conn,  $sql);//
+
+                if (mysqli_num_rows($res) > 0) {
+                    while ($images = mysqli_fetch_assoc($res)) {  ?>
+             
+             	        <?php if( $images ['id'] === $data ['id']){ $test= $images ['image_url']; } ?>
+                            <!-- <img src="uploads/<?php //echo $images ['image_url']; ?>" alt="">  -->
+                       
+			  <?php } }?> 
+
+		
+                </td>
+                <td><img src="uploads/<?php  echo $test ;?>" alt="" style="width:100px ; height:100px"></td>
+            
                 <td class="cardid"><span>Id : </span><?php echo $data ['id'];?></td>
                 <td class="cardname"><span>Name : </span><?php echo $data ['Name'];?></td><!--name-->
                 <td class="cardprice"><span>Price : </span><?php echo $data ['Price'];?><span class="dolarsign"> $</span></td><!--price-->
@@ -101,8 +102,7 @@
                     <a href="delete.php?id=<?php echo $data['id']; ?>" class="carddeletelink">Delete</a>
                 </td>
              </tr>
-            <?php
-        }?>        
+    <?php   }?>        
         </tbody>
     </table>
 </body>
