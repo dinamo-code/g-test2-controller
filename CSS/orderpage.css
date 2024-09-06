@@ -1,0 +1,64 @@
+.headerlogo {
+    font-size: 30px;
+    position: absolute;
+    font-weight: 800;
+    top: 15px;
+    left : 5%;
+}
+.headerlogo a {
+    color: #566dc5;
+}
+.orderpagetitle {
+    color: #566dc5;
+    text-align: center;
+    margin-top: -12px;
+}
+.locationurl {
+    max-width: 100px;
+    overflow: auto;
+}
+table {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+tr td{
+ padding: 11px;
+ text-align: center;
+}
+td span {
+    color: #566dc5;
+}
+td {
+ font-size: 16px;
+}
+td div {
+    padding-top: 3px !important;
+    font-weight: 500;
+}
+tbody {
+    display: flex;
+    flex-direction: column;
+    grid-column: 5px;
+}
+.locationurl::-webkit-scrollbar {
+    width: 1px;
+}
+.cardlocation{
+    position: relative;
+    top :15px
+}
+.cardlocation p {
+    margin-top: -0.5px;
+}
+.cardimg img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-width: 0.6px;
+    border-style: solid;
+}
+tbody {
+    margin-bottom: 80px;
+}
