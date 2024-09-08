@@ -24,10 +24,10 @@
     </style>
 </head>
 <body>
-<header>
+    <header>
         <div class="headerlogo">
             <a href="controller.php">G</a>
-        </div>
+            </div>
         <h3>
             Store Management & Analytics
         </h3>
@@ -40,9 +40,18 @@
         <div class="orders card">
             <h4>Orders <span>0</span></h4>
             <div class="ordersgragh"></div>
-        </div>
-        <div class="users card">
-            <h4>Users <span>0</span></h4>
+            </div>
+            <div class="users card">
+                <?php
+                include('cfg/dbconnect.php');// cfg/dbconnect.php
+            $sql = "SELECT * FROM  users ORDER BY id DESC LIMIT 1";//recorrect table name
+            $res = mysqli_query($conn,$sql);
+            
+            while($data = mysqli_fetch_array($res)){
+             ?> 
+
+            <h4>Users <span><?php echo $data ['id'] ?></span></h4>
+            <?php   }?>   
             <div class="usersgragh"></div>
         </div>
     </section>

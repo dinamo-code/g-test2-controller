@@ -71,12 +71,7 @@ tr td a {
     margin-top: 45px;
     margin-left: 45px;
 }
-.cardimg {
-    padding-top: 30px;
-    height: 110px;
-    width: 80;
-    justify-content: center;
-}
+
 .cardimg img {
     width: 120px;
     height: 120px;
@@ -84,7 +79,14 @@ tr td a {
 tbody {
     margin-bottom: 100px;
 }
+
+tr td img {
+    width: 100px;
+    height: 100px;
+}
 .cardimg {
-    display: flex;
-    align-items: center;
+    padding-left: 30px;
+}
+.cardid {
+    padding-top: 25px;
 }

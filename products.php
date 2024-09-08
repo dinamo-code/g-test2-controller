@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/global.css">
-    <link rel="stylesheet" href="CSS/productsconpage.css">
+    <link rel="stylesheet" href="CSS/productsconpage2.css">
     <title>Products control</title><!--products list-->
     <style>
          .headerlogo {
@@ -92,7 +92,7 @@
 
 		
                 </td>
-                <td><img src="uploads/<?php  echo $test ;?>" alt="" style="width:100px ; height:100px"></td>
+                <td class="cardimg"><img src="uploads/<?php  echo $test ;?>" alt="" style="width:100px ; height:100px"></td>
             
                 <td class="cardid"><span>Id : </span><?php echo $data ['id'];?></td>
                 <td class="cardname"><span>Name : </span><?php echo $data ['Name'];?></td><!--name-->
