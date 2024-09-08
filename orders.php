@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/global.css">
-    <link rel="stylesheet" href="CSS/orderpage.css">
+    <link rel="stylesheet" href="CSS/orderpage1.css">
     <title> Orders</title><!--products list-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,30 +71,20 @@
              ?>
 
              <tr class="cardcontainer" id="cardcontainer">
-                 <td class="cardid" style="display :none;"><span>Id : </span><div id="productid"><?php echo $data ['id'];?></div></td>
-                 <td class="cardname"><span>Username : </span><div id="Username"><?php echo $data ['Username'];?></div></td><!--name-->
-                 <td class="cardname"><span>Useremail : </span><div id="Useremail"><?php echo $data ['Useremail'];?></div></td><!--name-->
-                 <td class="cardname"><span>Userlocation : </span><div id="Userlocation"><?php echo $data ['Userlocation'];?></div></td><!--name-->
-                 <td class="cardname"><span>Paymethod : </span><div id="Paymethod"><?php echo $data ['Paymethod'];?></div></td><!--name-->
-                 <td class="cardname"><span>Product_name : </span><div id="Product_name"><?php echo $data ['Product_name'];?></div></td><!--name-->
+                 <td class="cardid" style="display :none;"><span>Id  </span><div id="productid"><?php echo $data ['id'];?></div></td>
+                 <td class="cardname"><span>Username  </span><div id="Username"><?php echo $data ['Username'];?></div></td><!--name-->
+                 <td class="cardname"><span>Useremail  </span><div id="Useremail"><?php echo $data ['Useremail'];?></div></td><!--name-->
+                 <td class="cardname"><span>Userlocation  </span><div id="Userlocation"><a href="<?php echo $data ['Userlocation'];?>"><img src="imgs/maps-and-flags.png" alt="" style="width :22px;height :22px"></a></div></td><!--name-->
+                 <td class="cardname"><span>Paymethod  </span><div id="Paymethod"><?php echo $data ['Paymethod'];?></div></td><!--name-->
+                 <td class="cardname"><span>Product name  </span><div id="Product_name"><?php echo $data ['Product_name'];?></div></td><!--name-->
                  <td>
-                <?php 
-               // $sql = "SELECT * FROM images  ";//
-               // $res = mysqli_query($conn,  $sql);//
 
-              //  if (mysqli_num_rows($res) > 0) {
-                   // while ($images = mysqli_fetch_assoc($res)) {  ?>
-             
-             	        <?php //if( $images ['id'] === $data ['id']){ $test= $images ['image_url']; } ?>
-                            <!-- <img src="uploads/<?php //echo $images ['image_url']; ?>" alt="">  -->
-                       
-			  <?php  //} }?> 
-
-		
                 </td>
-                <td><span>Product_image : </span><img src="uploads/<?php  echo $data['image_url'] ;?>" alt="" style="width:100px ; height:100px"></td>
-                 <td class="cardprice"><span>Product_price : </span><div id="Product_pricer"><?php echo $data ['Product_price'];?><span class="dolarsign"> $</span></div></td><!--price-->
-                <td class="cardname"><span>Product_count : </span><div id="Product_count"><?php echo $data ['Product_count'];?></div></td><!--name-->
+                <td class="cardimg"><img src="uploads/<?php  echo $data['image_url'] ;?>" alt=""></td>
+                 <td class="cardprice"><span>Product price </span><div id="Product_pricer"><?php echo $data ['Product_price'];?><span class="dolarsign"> $</span></div></td><!--price-->
+                <td class="cardname"><span>Product count  </span><div id="Product_count"><?php echo $data ['Product_count'];?></div></td><!--name-->
+                <td class="cardname"><span> Ordered at </span><div id="Product_count"><?php echo $data ['ordered_at'];?></div></td><!--name-->
+                <td class="cardlocation"><span>Location url</span><p class="locationurl"><?php echo $data ['Userlocation'];?></p></td>
                 
             </tr>
             <?php

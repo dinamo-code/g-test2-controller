@@ -92,8 +92,7 @@
 
 		
                 </td>
-                <td><img src="uploads/<?php  echo $data['image_url'] ;?>" alt="" style="width:100px ; height:100px"></td>
-            
+                <td class="cardimg"><img src="uploads/<?php  echo $data['image_url'] ;?>" alt="" style="width:100px ; height:100px"></td>
                 <td class="cardid"><span>Id : </span><?php echo $data ['id'];?></td>
                 <td class="cardname"><span>Name : </span><?php echo $data ['Name'];?></td><!--name-->
                 <td class="cardprice"><span>Price : </span><?php echo $data ['Price'];?><span class="dolarsign"> $</span></td><!--price-->

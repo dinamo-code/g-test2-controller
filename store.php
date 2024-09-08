@@ -38,7 +38,15 @@
             <div class="salesgragh"></div>
         </div>
         <div class="orders card">
-            <h4>Orders <span>0</span></h4>
+        <?php
+        include('cfg/dbconnect.php');// cfg/dbconnect.php
+    $sql = "SELECT * FROM  orders ORDER BY id DESC limit 1";//recorrect table name
+    $result = mysqli_query($conn,$sql);
+    
+    while($orders = mysqli_fetch_array($result)){
+     ?> 
+            <h4>Orders  <span>  <?php echo $orders ['id'] ?></span></h4>
+            <?php   }?>  
             <div class="ordersgragh"></div>
             </div>
             <div class="users card">
@@ -50,7 +58,7 @@
             while($data = mysqli_fetch_array($res)){
              ?> 
 
-            <h4>Users <span><?php echo $data ['id'] ?></span></h4>
+            <h4>Users  <span>  <?php echo $data ['id'] ?></span></h4>
             <?php   }?>   
             <div class="usersgragh"></div>
         </div>
