@@ -31,10 +31,10 @@ include('top_menu.php');
             <h3>Create New Product</h3>
         </div>
         <form action="process.php" method="post" enctype="multipart/form-data"><!-- just image , name , description , price-->
-            <!-- <div >
+            <div >
                 <label for="Image">Image:</label>
-                <input type="file" id="Image" name="Image" required placeholder=" Put an image" >
-            </div> -->
+                <input type="file" id="Image" name="my_image" required placeholder=" Put an image" >
+            </div>
 
 
             <div >

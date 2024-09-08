@@ -29,19 +29,19 @@
                 while($row=mysqli_fetch_array($result)){
         ?>
                             <?php 
-                $sql = "SELECT * FROM images  ";//
-                $res = mysqli_query($conn,  $sql);//
+               // $sql = "SELECT * FROM images  ";//
+               // $res = mysqli_query($conn,  $sql);//
 
-                if (mysqli_num_rows($res) > 0) {
-                    while ($images = mysqli_fetch_assoc($res)) {  ?>
+               // if (mysqli_num_rows($res) > 0) {
+                 //   while ($images = mysqli_fetch_assoc($res)) {  ?>
              
-             	        <?php if( $images ['id'] === $row ['id']){ $test= $images ['image_url']; } ?>
+             	        <?php //if( $images ['id'] === $row ['id']){ $test= $images ['image_url']; } ?>
                             <!-- <img src="uploads/<?php //echo $images ['image_url']; ?>" alt="">  -->
                        
-			  <?php } }?> 
+			  <?php //} }?> 
 
                 <!-- <h3>Image:</h3> -->
-                 <div class="viewimgcontainer"><img src="uploads/<?php  echo $test ;?>" alt="" style="width:100px ; height:100px"></div><!--image-->
+                 <div class="viewimgcontainer"><img src="uploads/<?php  echo $row['image_url'] ;?>" alt="" style="width:100px ; height:100px"></div><!--image-->
                  <div class="viewinfcontainer">
                  <div class="namemaincontainer">
                  <h3>Name:</h3><!--name-->

@@ -79,20 +79,20 @@
              <tr class="cardcontainer">
                 <td>
                 <?php 
-                $sql = "SELECT * FROM images  ";//
-                $res = mysqli_query($conn,  $sql);//
+                //$sql = "SELECT * FROM images  ";//
+                //$res = mysqli_query($conn,  $sql);//
 
-                if (mysqli_num_rows($res) > 0) {
-                    while ($images = mysqli_fetch_assoc($res)) {  ?>
+                //if (mysqli_num_rows($res) > 0) {
+                   // while ($images = mysqli_fetch_assoc($res)) {  ?>
              
-             	        <?php if( $images ['id'] === $data ['id']){ $test= $images ['image_url']; } ?>
+             	        <?php //if( $images ['id'] === $data ['id']){ $test= $images ['image_url']; } ?>
                             <!-- <img src="uploads/<?php //echo $images ['image_url']; ?>" alt="">  -->
                        
-			  <?php } }?> 
+			  <?php //} }?> 
 
 		
                 </td>
-                <td class="cardimg"><img src="uploads/<?php  echo $test ;?>" alt="" style="width:100px ; height:100px"></td>
+                <td><img src="uploads/<?php  echo $data['image_url'] ;?>" alt="" style="width:100px ; height:100px"></td>
             
                 <td class="cardid"><span>Id : </span><?php echo $data ['id'];?></td>
                 <td class="cardname"><span>Name : </span><?php echo $data ['Name'];?></td><!--name-->
